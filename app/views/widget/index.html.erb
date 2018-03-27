@@ -1,0 +1,8 @@
+<h2>Cronut acceptance widget</h2>
+<div class="challenge_box">
+  <%= label_tag 'terms_checkbox' do %>
+    <%= t('super_terms_html', cronut_link: @cronut_link, donut_link: @donut_link) %>
+  <% end %>
+  <%= check_box_tag 'terms_checkbox' %>
+
+</div>

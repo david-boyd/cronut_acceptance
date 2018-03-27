@@ -54,4 +54,7 @@ Rails.application.configure do
 
   # allow site to be iframed by 3rd party websites
   config.action_dispatch.default_headers = { 'X-Frame-Options' => 'ALLOWALL' }
+
+  # Raises error for missing translations
+  config.action_view.raise_on_missing_translations = true
 end
