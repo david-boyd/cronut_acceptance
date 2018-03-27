@@ -1,0 +1,5 @@
+nl:
+  cronuts_title: cronuts
+  donuts_title: donuts
+  super_terms_html: |
+          Door dit selectievakje in te schakelen, gaat u ermee akkoord dat %{cronut_link} beter zijn dan %{donut_link}
