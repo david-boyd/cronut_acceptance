@@ -25,5 +25,18 @@ RSpec.feature "ViewWidgets", type: :feature do
     new_url = 'http://www.google.com'
     visit widget_index_path(cronuts_url: new_url)
     expect(page).to have_link('cronuts', href: new_url)
+    expect(page).to have_link('donuts', href: APP_CONFIG['donut_url']) #remains unchanged
+  end
+
+  scenario 'supplied donuts url parameter' do
+    # default case, should have app_config url
+    visit widget_index_path
+    expect(page).to have_link('donuts', href: APP_CONFIG['donut_url'])
+
+    # shows supplied url
+    new_url = 'http://www.google.com'
+    visit widget_index_path(donuts_url: new_url)
+    expect(page).to have_link('donuts', href: new_url)
+    expect(page).to have_link('cronuts', href: APP_CONFIG['cronut_url']) #remains unchanged
   end
 end
