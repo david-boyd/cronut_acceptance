@@ -1,5 +1,6 @@
 nl:
   cronuts_title: cronuts
   donuts_title: donuts
+  url_invalid: Ongeldige parameter %{title}. De URL moet een volledig gevormde b.v. http://www.google.com
   super_terms_html: |
           Door dit selectievakje in te schakelen, gaat u ermee akkoord dat %{cronut_link} beter zijn dan %{donut_link}

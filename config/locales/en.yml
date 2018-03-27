@@ -1,5 +1,6 @@
 en:
   cronuts_title: cronuts
   donuts_title: donuts
+  url_invalid: Invalid paramter %{title}. The url must be a fully formed e.g. http://www.google.com
   super_terms_html: |
           By selecting this checkbox, you agree that %{cronut_link} are better than %{donut_link}
