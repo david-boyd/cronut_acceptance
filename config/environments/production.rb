@@ -88,4 +88,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # allow site to be iframed by 3rd party websites
+  config.action_dispatch.default_headers = { 'X-Frame-Options' => 'ALLOWALL' }
 end
